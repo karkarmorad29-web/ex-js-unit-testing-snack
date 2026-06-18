@@ -25,4 +25,4 @@ describe("createSlug", () => {
         const result = createSlug("Hello World");
         expect(result).toBe("hello-world");
     });
-});
+}); 
