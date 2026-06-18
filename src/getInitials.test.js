@@ -4,6 +4,7 @@ import { average } from "./average.js";
 import { createSlug } from "./createSlug.js";
 
 
+// Snack 1
 describe("getInitials", () => {
     test("dovrebbe restituire le iniziali di un nome completo", () => {
         const fullName = "Morad Karkar";

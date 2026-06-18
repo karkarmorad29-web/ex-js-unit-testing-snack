@@ -15,6 +15,7 @@ describe("Post Management", () => {
         posts = initialPosts.map(p => ({ ...p }));
     });
 
+    // Snack 7
     describe("findPostById()", () => {
         test("La funzione findPostById restituisce il post corretto dato l'array di post e l'id", () => {
             expect(findPostById(posts, 1)).toEqual({ id: 1, title: "Primo Post", slug: "primo-post" });
@@ -46,7 +47,7 @@ describe("Post Management", () => {
         });
     });
 
-    // Snack 8
+    // Snack 8 (Bonus)
     describe("addPost() / removePost()", () => {
         test("Dopo aver aggiunto un post con la funzione addPost, l'array posts deve contenere un elemento in più.", () => {
             const initialLength = posts.length;
@@ -61,7 +62,7 @@ describe("Post Management", () => {
         });
     });
 
-    // Snack 9
+    // Snack 9 (Bonus)
     describe("addPost() – Validazione duplicati", () => {
         test("Se si tenta di aggiungere un post con un id o uno slug già esistente, la funzione addPost deve lanciare un errore.", () => {
             expect(() => addPost(posts, { id: 1, title: "Duplicato ID", slug: "nuovo-slug" })).toThrow("Id già esistente");

@@ -1,6 +1,7 @@
 import { describe, test, expect } from "vitest";
 import { isPalindrome } from "./isPalindrome.js";
 
+// Snack 2
 describe("String Utilities", () => {
     describe("isPalindrome()", () => {
         test("La funzione isPalindrome verifica se una stringa è un palindromo", () => {
